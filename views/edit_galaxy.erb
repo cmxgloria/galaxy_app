@@ -1,0 +1,10 @@
+<h1>Edit Galaxy</h1>
+<form action="/galaxy/<%= @galaxy['id'] %>" method="post">
+<%# sinatra support patch, change to post %>
+  <input type="hidden" name ="_method" value="patch">
+  <label for="">name</label>
+  <input type="" name ="name" value="<%= @galaxy['name']%>">
+  <label for="">image url</label>
+  <input type="text" name="image_url" value="<%= @galaxy['image_url']%>">
+  <button>Update</button>
+</form>

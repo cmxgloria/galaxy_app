@@ -1,0 +1,11 @@
+<h1>Galaxy</h1>
+<a href="/galaxy/new">post new planet</a>
+<br>
+<% @result.each do |galaxy| %>
+<img src="<%= galaxy['image_url']%>" alt="">
+<h2>
+<a href="/galaxy/<%= galaxy['id']%>">
+<%= galaxy['name']%>
+</a>
+</h2>
+<%end%>

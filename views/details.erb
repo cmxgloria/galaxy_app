@@ -1,0 +1,9 @@
+<h1> <%= @galaxy['name'] %> details </h1>
+<a href="/galaxy/<%= @galaxy['id'] %>/edit">Edit</a>
+<form action="/galaxy/<%= @galaxy['id'] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>delete</button>
+</form>
+
+
+
